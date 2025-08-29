@@ -59,10 +59,9 @@ The API will be available at `http://localhost:3000` by default.
 
 ### Posts
 - `GET /posts` — List all posts
-- `GET /posts/:id` — Get a single post by ID
-- `POST /posts` — Create a new post
-- `PUT /posts/:id` — Update a post by ID
-- `DELETE /posts/:id` — Delete a post by ID
+- `POST /posts/create` — Create a new post (expects `author`, `title`, `description` in body)
+- `GET /posts/p/:postId` — Get a single post by its ID
+- `GET /posts/a/:author` — List all posts by a specific author
 
 ## Testing
 Run tests with:
